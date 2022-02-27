@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* width: 100vw; */
+  height: 100vh;
+}
+
+.logo {
+  height: 10vh;
+}
+
+.logo img {
+  height: 100%;
+  padding: 1em 0 0 2em;
+  margin-top: 1em;
+}
+
+.form-div {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  /* padding: 2em 0; */
+}
+
+.heading h1,
+span {
+  color: #00c0f3;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form label {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.form input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form input[type='submit'] {
+  margin-top: 1em;
+  background-color: black;
+  padding: 1em;
+  color: white;
+  border-radius: 0.5em;
+}
+
+.img {
+  display: none;
+}
+
+.new-account {
+  font-size: 0.7em;
+  margin-top: 2em;
+}
+
+@media only screen and (min-width: 720px) {
+  .logo img {
+    margin: 2em 0 0 3em;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+  .main {
+    width: 50%;
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 50%;
+    height: 100vh;
+  }
+  .img img {
+    height: 100%;
+  }
+}
